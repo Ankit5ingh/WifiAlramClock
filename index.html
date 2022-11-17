@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alarm Setting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <input id="inA1" type="number" label="Alarm 1">
+        <button type="submit" id="btn1" >Set Alarm 1</button>
+    <input id="inA2" type="number" label="Alarm 2">
+        <button type="submit" id="btn2">Set Alarm 2</button>
+    <input id="inA3" type="number" label="Alarm 3">
+        <button type="submit" id="btn3">Set Alarm 3</button>
+    <input id="inA4" type="number" label="Alarm 4">
+        <button type="submit" id="btn4">Set Alarm 4</button>
+
+    <div>
+        <p id="A1"></p>
+        <p id="A2"></p>
+        <p id="A3"></p>
+        <p id="A4"></p>
+    </div>
+
+    <script src="index.js">
+        document.getElementById("btn1").addEventListener("click", document.getElementById("A1").innerHTML = inputA1);
+
+    </script>
+</body>
+
+</html>
